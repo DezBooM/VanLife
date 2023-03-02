@@ -1,8 +1,10 @@
+import incomeGraph from "../assets/images/income-graph.png"
+
 export default function Income() {
   const transactionsData = [
-    { amount: 720, date: "Jan 3, '23", id: "1" },
-    { amount: 560, date: "Dec 12, '22", id: "2" },
-    { amount: 980, date: "Dec 3, '22", id: "3" },
+    { amount: 720, date: "Feb 20, '23", id: "1" },
+    { amount: 560, date: "Feb 12, '23", id: "2" },
+    { amount: 980, date: "Jan 30, '23", id: "3" },
   ]
   return (
     <section className="host-income">
@@ -11,11 +13,7 @@ export default function Income() {
         Last <span>30 days</span>
       </p>
       <h2>$2,260</h2>
-      <img
-        className="graph"
-        src="/assets/images/income-graph.png"
-        alt="Income graph"
-      />
+      <img className="graph" src={incomeGraph} alt="Income graph" />
       <div className="info-header">
         <h3>Your transactions (3)</h3>
         <p>
