@@ -1,4 +1,4 @@
-import incomeGraph from "assets/images/income-graph.png"
+import incomeGraph from "../../assets/images/income-graph.png"
 
 export default function Income() {
   const transactionsData = [
