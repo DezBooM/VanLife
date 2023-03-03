@@ -1,10 +1,10 @@
 import { Suspense } from "react"
 import { Link, defer, Await, useLoaderData } from "react-router-dom"
 import { BsStarFill } from "react-icons/bs"
-import { getHostVans } from "../../api"
+import { getAllHostVans } from "../../firebase"
 
 export function loader() {
-  return defer({ vans: getHostVans() })
+  return defer({ vans: getAllHostVans() })
 }
 
 export default function Dashboard() {

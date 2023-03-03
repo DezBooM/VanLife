@@ -6,10 +6,10 @@ import {
   defer,
   Await,
 } from "react-router-dom"
-import { getVans } from "../../api"
+import { getAllVans } from "../../firebase"
 
 export function loader() {
-  return defer({ vans: getVans() })
+  return defer({ vans: getAllVans() })
 }
 
 export default function Vans() {

@@ -45,8 +45,12 @@ export default function Login() {
       <h1>Sign in to your account</h1>
       {data?.error && <h3 className="login-error">{data.error}</h3>}
       <Form action="/login" method="post" className="login-form">
-        <input name="email" type="email" placeholder="Email address" />
-        <input name="password" type="password" placeholder="Password" />
+        <input
+          name="email"
+          type="email"
+          placeholder="Email address: test@test.com"
+        />
+        <input name="password" type="password" placeholder="Password: test" />
         <button disabled={navigation.state === "submitting"}>
           {navigation.state === "submitting" ? "Logging in..." : "Log in"}
         </button>
